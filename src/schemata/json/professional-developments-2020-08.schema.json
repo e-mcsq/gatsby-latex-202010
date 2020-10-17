@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft/2019-09/schema#",
+  "$id": "https://example.org/schemata/json/professional-developments-2020-08.schema.json",
+  "title": "Professional Developments",
+  "description": "A list of professional developments in the resume.",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "content": {
+      "type": "array",
+      "description": "A list of professional developments.",
+      "items": {
+        "$ref": "professional-development-2020-08.schema.json#"
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "title",
+    "content"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Untitled GraphQL Schema",
+  "schemaPath": "remote-schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Remote GraphQL Endpoint": {
+        "url": "http://localhost:3000/___graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": true
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft/2019-09/schema#",
+  "$id": "https://example.org/schemata/json/__www_example-2020-08.schema.json",
+  "title": "Root Schema of example",
+  "description": "Refers to all other themes of this site.",
+  "type": "object",
+  "properties": {
+    "professionalDevelopment": {
+      "$ref": "professional-developments-2020-08.schema.json#"
+    }
+  },
+  "required": ["professionalDevelopment"]
+}

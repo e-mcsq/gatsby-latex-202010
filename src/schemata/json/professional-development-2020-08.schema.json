@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft/2019-09/schema#",
+  "$id": "https://example.org/schemata/json/professional-development-2020-08.schema.json",
+  "title": "Professional Development",
+  "description": "A professional development in the resume.",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "organizer": {
+      "type": "object",
+      "properties": {
+        "company": {
+          "type": "string"
+        },
+        "speaker": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "company"
+      ]
+    }
+  },
+  "required": [
+    "date",
+    "title",
+    "organizer"
+  ]
+}

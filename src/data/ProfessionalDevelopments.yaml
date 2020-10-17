@@ -1,0 +1,20 @@
+title: Training courses
+description: |
+  An introductory descriptive text.
+content:
+  - date: 2021-01-01
+    title: Certified iSAQB-Module «Advanced Level CLOUDINFRA»
+    description: !markdown |
+      - Infrastructure, Container and Cloud Native** (planned)
+    organizer:
+      company: edx
+      speaker: Rocket Raccoon
+
+  - date: 2020-01-01
+    title: Kubernetes Certification
+    description: !markdown |
+      - [LFS158x: Introduction to Kubernetes](https://www.edx.org/course/introduction-to-kubernetes)
+      - example 1
+      - example 2
+    organizer:
+      company: The Linux Fondation, edX

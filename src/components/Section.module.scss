@@ -1,0 +1,46 @@
+$BackgroundColor: rgba(250, 250, 248, 0.9);
+$BackgroundColorOpen: rgba(255, 255, 255, 0.8);
+$BackgroundColorClose: rgba(255, 255, 255, 1);
+$BorderColor: #8794ac;
+
+.section {
+  width: 100%;
+  scroll-margin-top: 3.2em;
+
+  > header {
+    margin-bottom: 0.6em;
+    padding: 1em 1em 0 1em;
+
+    @media screen {
+      background: linear-gradient($BackgroundColorClose 0%, $BackgroundColor 50%, $BackgroundColorOpen 100%);
+      transition: all 0.3s linear;
+    }
+
+    > h2 {
+      border-bottom: 1px solid $BorderColor;
+    }
+  }
+
+  > .content {
+    padding: 0 1em 0.3em 1em;
+
+    p,
+    * {
+      hyphens: auto;
+      hyphenate-limit-chars: 6 3 2;
+      hyphenate-limit-lines: 2;
+    }
+
+    .navigateToTop {
+      text-align: right;
+
+      @media print {
+        display: none;
+      }
+    }
+  }
+}
+
+.section.avoid-page-break {
+  page-break-inside: avoid;
+}
